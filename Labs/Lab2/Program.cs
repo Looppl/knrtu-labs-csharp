@@ -6,7 +6,33 @@ namespace Lab2
     class Program
     {
         static void Main(string[] args)
-        {
+        {    // 1 variant неправильный
+            int n = 10;
+            int n1 = 0;
+            int n2 = 0;
+            int n3 = 0;
+            int p1 = 0;
+            int p2 = 0;
+            while ((n >= 10) && (n < 100))
+            {
+                n1 = n % 10;
+                n2 = n / 10;
+                n3 = n * 2;
+                p1 = n3 % 10;
+                p2 = n3 / 10;
+            }
+            if (((n1 + n2) == 9) && ((p1 + p2) == 9))
+            {
+                Console.WriteLine(n);
+                n++;
+                }
+            }
+
+
+        }
+
+    }
+
             Task2();
         }
 
